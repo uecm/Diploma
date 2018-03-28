@@ -7,23 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7424A6AB2063A9AC0052374F /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6AA2063A9AC0052374F /* Lesson.swift */; };
+		7424A6AD2063A9B30052374F /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6AC2063A9B30052374F /* Subject.swift */; };
+		7424A6AF2063AAA00052374F /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6AE2063AAA00052374F /* Teacher.swift */; };
+		7424A6B32063AAB00052374F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B22063AAB00052374F /* Day.swift */; };
+		7424A6B52063ABE30052374F /* StudentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B42063ABE30052374F /* StudentGroup.swift */; };
+		7424A6B72063AD0E0052374F /* TodayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B62063AD0E0052374F /* TodayDataProvider.swift */; };
+		7424A6BA2063B5920052374F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B92063B5920052374F /* ScheduleViewController.swift */; };
+		7424A6BC2063B5A20052374F /* ScheduleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */; };
+		7424A6BF2063BE350052374F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BE2063BE350052374F /* ReportViewController.swift */; };
+		7424A6C12063BE440052374F /* ReportDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C02063BE430052374F /* ReportDataProvider.swift */; };
+		7424A6C42068DD5D0052374F /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C32068DD5D0052374F /* SubjectViewController.swift */; };
+		7424A6C62068DD660052374F /* SubjectDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C52068DD660052374F /* SubjectDataProvider.swift */; };
 		74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74358470205BC0FB00DB0AE3 /* AppDelegate.swift */; };
-		74358473205BC0FB00DB0AE3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74358472205BC0FB00DB0AE3 /* FirstViewController.swift */; };
-		74358475205BC0FB00DB0AE3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74358474205BC0FB00DB0AE3 /* SecondViewController.swift */; };
 		74358478205BC0FB00DB0AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74358476205BC0FB00DB0AE3 /* Main.storyboard */; };
 		7435847A205BC0FB00DB0AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74358479205BC0FB00DB0AE3 /* Assets.xcassets */; };
 		7435847D205BC0FB00DB0AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7435847B205BC0FB00DB0AE3 /* LaunchScreen.storyboard */; };
+		74358486205BC73C00DB0AE3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74358485205BC73C00DB0AE3 /* TodayViewController.swift */; };
+		746EEB47206ACE900005B0F2 /* AddLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB46206ACE900005B0F2 /* AddLessonViewController.swift */; };
+		746EEB49206ACEA90005B0F2 /* TeacherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB48206ACEA90005B0F2 /* TeacherListViewController.swift */; };
+		746EEB4B206ACEC10005B0F2 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB4A206ACEC10005B0F2 /* TeacherViewController.swift */; };
+		746EEB51206AD1640005B0F2 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB50206AD1640005B0F2 /* TextFieldCell.swift */; };
+		746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */; };
+		746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB54206AE30D0005B0F2 /* DataManager.swift */; };
+		746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */; };
+		817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956EE0E630679BB03580EA /* Pods_Diploma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7424A6AA2063A9AC0052374F /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		7424A6AC2063A9B30052374F /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		7424A6AE2063AAA00052374F /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		7424A6B22063AAB00052374F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		7424A6B42063ABE30052374F /* StudentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGroup.swift; sourceTree = "<group>"; };
+		7424A6B62063AD0E0052374F /* TodayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDataProvider.swift; sourceTree = "<group>"; };
+		7424A6B92063B5920052374F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataProvider.swift; sourceTree = "<group>"; };
+		7424A6BE2063BE350052374F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		7424A6C02063BE430052374F /* ReportDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataProvider.swift; sourceTree = "<group>"; };
+		7424A6C32068DD5D0052374F /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		7424A6C52068DD660052374F /* SubjectDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDataProvider.swift; sourceTree = "<group>"; };
 		7435846D205BC0FB00DB0AE3 /* Diploma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diploma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74358470205BC0FB00DB0AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74358472205BC0FB00DB0AE3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		74358474205BC0FB00DB0AE3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		74358477205BC0FB00DB0AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74358479205BC0FB00DB0AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7435847C205BC0FB00DB0AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7435847E205BC0FB00DB0AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74358485205BC73C00DB0AE3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		746EEB46206ACE900005B0F2 /* AddLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonViewController.swift; sourceTree = "<group>"; };
+		746EEB48206ACEA90005B0F2 /* TeacherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewController.swift; sourceTree = "<group>"; };
+		746EEB4A206ACEC10005B0F2 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
+		746EEB50206AD1640005B0F2 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonDataProvider.swift; sourceTree = "<group>"; };
+		746EEB54206AE30D0005B0F2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListDataProvider.swift; sourceTree = "<group>"; };
+		804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.debug.xcconfig"; sourceTree = "<group>"; };
+		8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.release.xcconfig"; sourceTree = "<group>"; };
+		E0956EE0E630679BB03580EA /* Pods_Diploma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diploma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +71,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		648F72DFFDE1E5C2F028F39B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0956EE0E630679BB03580EA /* Pods_Diploma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7424A6A92063A99E0052374F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7424A6AA2063A9AC0052374F /* Lesson.swift */,
+				7424A6AC2063A9B30052374F /* Subject.swift */,
+				7424A6AE2063AAA00052374F /* Teacher.swift */,
+				7424A6B42063ABE30052374F /* StudentGroup.swift */,
+				7424A6B22063AAB00052374F /* Day.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7424A6B82063B5730052374F /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				7424A6B92063B5920052374F /* ScheduleViewController.swift */,
+				7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		7424A6BD2063BE230052374F /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				7424A6BE2063BE350052374F /* ReportViewController.swift */,
+				7424A6C02063BE430052374F /* ReportDataProvider.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		7424A6C22068DD4C0052374F /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				7424A6C32068DD5D0052374F /* SubjectViewController.swift */,
+				7424A6C52068DD660052374F /* SubjectDataProvider.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
 		74358464205BC0FB00DB0AE3 = {
 			isa = PBXGroup;
 			children = (
 				7435846F205BC0FB00DB0AE3 /* Diploma */,
 				7435846E205BC0FB00DB0AE3 /* Products */,
+				E0CF29713F9E13DC3084963C /* Pods */,
+				648F72DFFDE1E5C2F028F39B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +147,74 @@
 			isa = PBXGroup;
 			children = (
 				74358470205BC0FB00DB0AE3 /* AppDelegate.swift */,
-				74358472205BC0FB00DB0AE3 /* FirstViewController.swift */,
-				74358474205BC0FB00DB0AE3 /* SecondViewController.swift */,
+				746EEB54206AE30D0005B0F2 /* DataManager.swift */,
+				746EEB50206AD1640005B0F2 /* TextFieldCell.swift */,
+				7424A6A92063A99E0052374F /* Models */,
+				74358484205BC72800DB0AE3 /* Today */,
+				7424A6B82063B5730052374F /* Schedule */,
+				7424A6BD2063BE230052374F /* Report */,
+				7424A6C22068DD4C0052374F /* Subject */,
+				746EEB43206ACD0C0005B0F2 /* Management */,
 				74358476205BC0FB00DB0AE3 /* Main.storyboard */,
 				74358479205BC0FB00DB0AE3 /* Assets.xcassets */,
 				7435847B205BC0FB00DB0AE3 /* LaunchScreen.storyboard */,
 				7435847E205BC0FB00DB0AE3 /* Info.plist */,
 			);
 			path = Diploma;
+			sourceTree = "<group>";
+		};
+		74358484205BC72800DB0AE3 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				74358485205BC73C00DB0AE3 /* TodayViewController.swift */,
+				7424A6B62063AD0E0052374F /* TodayDataProvider.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		746EEB43206ACD0C0005B0F2 /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				746EEB4F206ACEF50005B0F2 /* Add Lesson */,
+				746EEB4E206ACEEE0005B0F2 /* Teacher List */,
+				746EEB4D206ACEE80005B0F2 /* Teacher */,
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+		746EEB4D206ACEE80005B0F2 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				746EEB4A206ACEC10005B0F2 /* TeacherViewController.swift */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		746EEB4E206ACEEE0005B0F2 /* Teacher List */ = {
+			isa = PBXGroup;
+			children = (
+				746EEB48206ACEA90005B0F2 /* TeacherListViewController.swift */,
+				746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */,
+			);
+			path = "Teacher List";
+			sourceTree = "<group>";
+		};
+		746EEB4F206ACEF50005B0F2 /* Add Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				746EEB46206ACE900005B0F2 /* AddLessonViewController.swift */,
+				746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */,
+			);
+			path = "Add Lesson";
+			sourceTree = "<group>";
+		};
+		E0CF29713F9E13DC3084963C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */,
+				8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74358481205BC0FB00DB0AE3 /* Build configuration list for PBXNativeTarget "Diploma" */;
 			buildPhases = (
+				88E6B1D774DE14E2BA7B8772 /* [CP] Check Pods Manifest.lock */,
 				74358469205BC0FB00DB0AE3 /* Sources */,
 				7435846A205BC0FB00DB0AE3 /* Frameworks */,
 				7435846B205BC0FB00DB0AE3 /* Resources */,
+				2A3F9FE5CCB4F0B38C1C34B5 /* [CP] Embed Pods Frameworks */,
+				6AF2AB6AD29CE5C619A96D7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,14 +287,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A3F9FE5CCB4F0B38C1C34B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF2AB6AD29CE5C619A96D7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88E6B1D774DE14E2BA7B8772 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diploma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74358469205BC0FB00DB0AE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74358475205BC0FB00DB0AE3 /* SecondViewController.swift in Sources */,
+				746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */,
+				74358486205BC73C00DB0AE3 /* TodayViewController.swift in Sources */,
 				74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */,
-				74358473205BC0FB00DB0AE3 /* FirstViewController.swift in Sources */,
+				7424A6BC2063B5A20052374F /* ScheduleDataProvider.swift in Sources */,
+				7424A6AB2063A9AC0052374F /* Lesson.swift in Sources */,
+				746EEB47206ACE900005B0F2 /* AddLessonViewController.swift in Sources */,
+				746EEB4B206ACEC10005B0F2 /* TeacherViewController.swift in Sources */,
+				7424A6C12063BE440052374F /* ReportDataProvider.swift in Sources */,
+				7424A6AD2063A9B30052374F /* Subject.swift in Sources */,
+				7424A6B72063AD0E0052374F /* TodayDataProvider.swift in Sources */,
+				746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */,
+				7424A6BA2063B5920052374F /* ScheduleViewController.swift in Sources */,
+				7424A6B32063AAB00052374F /* Day.swift in Sources */,
+				746EEB51206AD1640005B0F2 /* TextFieldCell.swift in Sources */,
+				7424A6BF2063BE350052374F /* ReportViewController.swift in Sources */,
+				7424A6AF2063AAA00052374F /* Teacher.swift in Sources */,
+				7424A6C42068DD5D0052374F /* SubjectViewController.swift in Sources */,
+				7424A6B52063ABE30052374F /* StudentGroup.swift in Sources */,
+				746EEB49206ACEA90005B0F2 /* TeacherListViewController.swift in Sources */,
+				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
+				7424A6C62068DD660052374F /* SubjectDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +507,17 @@
 		};
 		74358482205BC0FB00DB0AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DD484H6UF4;
 				INFOPLIST_FILE = Diploma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sesh.Diploma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,14 +525,17 @@
 		};
 		74358483205BC0FB00DB0AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DD484H6UF4;
 				INFOPLIST_FILE = Diploma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sesh.Diploma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
