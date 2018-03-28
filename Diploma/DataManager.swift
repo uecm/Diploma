@@ -62,6 +62,9 @@ class DataManager {
         return Array(realm.objects(StudentGroup.self))
     }
     
+    var lessons: [Lesson] {
+        return Array(realm.objects(Lesson.self))
+    }
     
     
     // MARK: - Write

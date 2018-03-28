@@ -21,6 +21,11 @@ class TodayViewController: UITableViewController {
         configureView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     private func configureView() {
         dateLabel.text = string(from: Date())
         statusLabel.text = "Нет новых заданий"

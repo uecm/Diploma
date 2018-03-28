@@ -49,6 +49,9 @@
                                             <segment title="Неделя 1"/>
                                             <segment title="Неделя 2"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="weekChanged:" destination="vNr-3e-PAE" eventType="valueChanged" id="n40-l4-5of"/>
+                                        </connections>
                                     </segmentedControl>
                                 </barButtonItem>
                             </items>
@@ -88,6 +91,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Расписание" id="AcO-ae-rOv"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="2Hc-Rj-LXE" id="Vjx-Y2-Fv0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAO-Ue-s1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,6 +534,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="whi-YN-8RB"/>
+        <segue reference="8PX-5a-1lZ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import DateToolsSwift
 
 class TodayDataProvider {
     
     func lessons() -> [Lesson] {
-
-        return []
+        let currentWeekday = Date().weekday - 1
+        return DataManager.shared.lessons.filter({ $0.weekday?.weekday == currentWeekday })
     }
     
 }

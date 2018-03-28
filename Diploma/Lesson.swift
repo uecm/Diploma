@@ -13,17 +13,21 @@ class Lesson: Object {
     @objc dynamic var teacher: Teacher?
     @objc dynamic var studentGroup: StudentGroup?
     @objc dynamic var weekday: Day?
+    @objc dynamic var week: Int = 1
     
-    @objc dynamic var objectID: Int = 0
-//
-//    static func incrementID() -> Int {
-//        let realm = try! Realm()
-//        return (realm.objects(Lesson.self).max(ofProperty: "objectID") as Int? ?? 0) + 1
-//    }
-//
+    @objc dynamic var objectID: String = UUID().uuidString
+
+    
     override static func primaryKey() -> String? {
         return "objectID"
     }
     
-    
+    static func == (lhs: Lesson, rhs: Lesson) -> Bool {
+        return
+            lhs.subject?.name == rhs.subject?.name &&
+            lhs.teacher?.fullName() == rhs.teacher?.fullName() &&
+            lhs.studentGroup?.name == rhs.studentGroup?.name &&
+            lhs.weekday?.name == rhs.weekday?.name &&
+            lhs.week == rhs.week
+    }
 }

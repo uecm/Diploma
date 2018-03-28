@@ -46,6 +46,10 @@ class AddLessonViewController: UITableViewController {
             title = "День"
             placeholder = "День недели"
             text = lesson.weekday?.name
+        case 4:
+            title = "Неделя"
+            placeholder = "Неделя"
+            text = "\(lesson.week)"
         default:
             break
         }
@@ -82,6 +86,8 @@ class AddLessonViewController: UITableViewController {
             return DataManager.shared.groups.map({ $0.name ?? "No name" })
         case 3:
             return ScheduleDataProvider().dayNames
+        case 4:
+            return ["1", "2"]
         default:
             break
         }
@@ -98,7 +104,9 @@ class AddLessonViewController: UITableViewController {
             lesson.studentGroup = DataManager.shared.groups[objectIndex]
         case 3:
             let dayName = ScheduleDataProvider().dayNames[objectIndex]
-            lesson.weekday = Day(name: dayName)
+            lesson.weekday = Day(name: dayName, weekday: objectIndex + 1)
+        case 4:
+            lesson.week = objectIndex + 1
         default:
             break
         }
@@ -124,7 +132,7 @@ extension AddLessonViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

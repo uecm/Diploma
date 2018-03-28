@@ -11,7 +11,10 @@ import RealmSwift
 class AddLessonDataProvider {
     
     func addLesson(_ lesson: Lesson) {
-        DataManager.shared.write(object: lesson)
+        let exists = DataManager.shared.lessons.filter({ $0 == lesson }).count == 1
+        if exists == false {
+            DataManager.shared.write(object: lesson)
+        }
     }
     
 }

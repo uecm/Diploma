@@ -11,30 +11,43 @@ import UIKit
 class ScheduleViewController: UITableViewController {
     
     lazy var dataProvider = ScheduleDataProvider()
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    var currentWeek: Int {
+        return segmentedControl.selectedSegmentIndex + 1
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    @IBAction func weekChanged(_ sender: UISegmentedControl) {
+        tableView.reloadData()
+    }
 }
 
 
 // MARK: - Data Source
 extension ScheduleViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 7
+        return dataProvider.dayNames.count
     }
     
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
         let day = dataProvider.days()[section]
-        return dataProvider.lessons(for: day).count
+        return dataProvider.lessons(for: day, week: currentWeek).count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let day = dataProvider.days()[indexPath.section]
-        let lesson = dataProvider.lessons(for: day)[indexPath.row]
+        let lesson = dataProvider.lessons(for: day, week: currentWeek)[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = lesson.subject?.name
