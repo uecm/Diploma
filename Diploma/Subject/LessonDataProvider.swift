@@ -1,5 +1,5 @@
 //
-//  SubjectDataProvider.swift
+//  LessonDataProvider.swift
 //  Diploma
 //
 //  Created by Egor on 3/26/18.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-class SubjectDataProvider {
-    
-    var subject: Subject?
+class LessonDataProvider {
+    var lesson: Lesson?
     
 }

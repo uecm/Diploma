@@ -12,4 +12,7 @@ class TeacherListDataProvider {
     
     lazy var teachers = DataManager.shared.teachers
 
+    func lessons(for teacher: Teacher) -> [Lesson] {
+        return DataManager.shared.lessons.filter({ $0.teacher?.fullName() == teacher.fullName() })
+    }
 }

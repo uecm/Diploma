@@ -41,19 +41,19 @@ class TodayViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if  segue.identifier == SubjectViewController.segueIdentifier,
+        if  segue.identifier == LessonViewController.segueIdentifier,
             let cell = sender as? UITableViewCell,
-            let controller = segue.destination as? SubjectViewController {
+            let controller = segue.destination as? LessonViewController {
             showDetailForSubject(at: cell, in: controller)
         }
     }
     
-    private func showDetailForSubject(at cell: UITableViewCell, in controller: SubjectViewController) {
+    private func showDetailForSubject(at cell: UITableViewCell, in controller: LessonViewController) {
         guard let index = tableView.indexPath(for: cell)?.row else {
             return
         }
         let lesson = dataProvider.lessons()[index]
-        controller.dataProvider.subject = lesson.subject
+        controller.dataProvider.lesson = lesson
     }
 }
 
@@ -72,7 +72,7 @@ extension TodayViewController {
         let lesson = dataProvider.lessons()[indexPath.row]
         
         cell.textLabel?.text = lesson.subject?.name
-        cell.detailTextLabel?.text = lesson.teacher?.firstName
+        cell.detailTextLabel?.text = lesson.studentGroup?.name
         
         return cell
     }

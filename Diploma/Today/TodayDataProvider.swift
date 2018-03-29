@@ -13,7 +13,8 @@ class TodayDataProvider {
     
     func lessons() -> [Lesson] {
         let currentWeekday = Date().weekday - 1
-        return DataManager.shared.lessons.filter({ $0.weekday?.weekday == currentWeekday })
+        let currentWeek = (Calendar.current.component(.weekOfYear, from: Date()) + 1) % 2 + 2
+        return DataManager.shared.lessons.filter({ $0.weekday?.weekday == currentWeekday && $0.week == currentWeek})
     }
     
 }

@@ -17,8 +17,8 @@
 		7424A6BC2063B5A20052374F /* ScheduleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */; };
 		7424A6BF2063BE350052374F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BE2063BE350052374F /* ReportViewController.swift */; };
 		7424A6C12063BE440052374F /* ReportDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C02063BE430052374F /* ReportDataProvider.swift */; };
-		7424A6C42068DD5D0052374F /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C32068DD5D0052374F /* SubjectViewController.swift */; };
-		7424A6C62068DD660052374F /* SubjectDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C52068DD660052374F /* SubjectDataProvider.swift */; };
+		7424A6C42068DD5D0052374F /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C32068DD5D0052374F /* LessonViewController.swift */; };
+		7424A6C62068DD660052374F /* LessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C52068DD660052374F /* LessonDataProvider.swift */; };
 		74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74358470205BC0FB00DB0AE3 /* AppDelegate.swift */; };
 		74358478205BC0FB00DB0AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74358476205BC0FB00DB0AE3 /* Main.storyboard */; };
 		7435847A205BC0FB00DB0AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74358479205BC0FB00DB0AE3 /* Assets.xcassets */; };
@@ -31,6 +31,7 @@
 		746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */; };
 		746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB54206AE30D0005B0F2 /* DataManager.swift */; };
 		746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */; };
+		74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */; };
 		817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956EE0E630679BB03580EA /* Pods_Diploma.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +46,8 @@
 		7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataProvider.swift; sourceTree = "<group>"; };
 		7424A6BE2063BE350052374F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		7424A6C02063BE430052374F /* ReportDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataProvider.swift; sourceTree = "<group>"; };
-		7424A6C32068DD5D0052374F /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
-		7424A6C52068DD660052374F /* SubjectDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDataProvider.swift; sourceTree = "<group>"; };
+		7424A6C32068DD5D0052374F /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		7424A6C52068DD660052374F /* LessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDataProvider.swift; sourceTree = "<group>"; };
 		7435846D205BC0FB00DB0AE3 /* Diploma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diploma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74358470205BC0FB00DB0AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74358477205BC0FB00DB0AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonDataProvider.swift; sourceTree = "<group>"; };
 		746EEB54206AE30D0005B0F2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListDataProvider.swift; sourceTree = "<group>"; };
+		74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLessonListViewController.swift; sourceTree = "<group>"; };
 		804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.debug.xcconfig"; sourceTree = "<group>"; };
 		8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.release.xcconfig"; sourceTree = "<group>"; };
 		E0956EE0E630679BB03580EA /* Pods_Diploma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diploma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,8 +121,8 @@
 		7424A6C22068DD4C0052374F /* Subject */ = {
 			isa = PBXGroup;
 			children = (
-				7424A6C32068DD5D0052374F /* SubjectViewController.swift */,
-				7424A6C52068DD660052374F /* SubjectDataProvider.swift */,
+				7424A6C32068DD5D0052374F /* LessonViewController.swift */,
+				7424A6C52068DD660052374F /* LessonDataProvider.swift */,
 			);
 			path = Subject;
 			sourceTree = "<group>";
@@ -195,6 +197,7 @@
 			children = (
 				746EEB48206ACEA90005B0F2 /* TeacherListViewController.swift */,
 				746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */,
+				74DDD0E3206CFCF20064921F /* TeacherLessonListViewController */,
 			);
 			path = "Teacher List";
 			sourceTree = "<group>";
@@ -206,6 +209,14 @@
 				746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */,
 			);
 			path = "Add Lesson";
+			sourceTree = "<group>";
+		};
+		74DDD0E3206CFCF20064921F /* TeacherLessonListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */,
+			);
+			path = TeacherLessonListViewController;
 			sourceTree = "<group>";
 		};
 		E0CF29713F9E13DC3084963C /* Pods */ = {
@@ -368,11 +379,12 @@
 				746EEB51206AD1640005B0F2 /* TextFieldCell.swift in Sources */,
 				7424A6BF2063BE350052374F /* ReportViewController.swift in Sources */,
 				7424A6AF2063AAA00052374F /* Teacher.swift in Sources */,
-				7424A6C42068DD5D0052374F /* SubjectViewController.swift in Sources */,
+				7424A6C42068DD5D0052374F /* LessonViewController.swift in Sources */,
 				7424A6B52063ABE30052374F /* StudentGroup.swift in Sources */,
 				746EEB49206ACEA90005B0F2 /* TeacherListViewController.swift in Sources */,
 				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
-				7424A6C62068DD660052374F /* SubjectDataProvider.swift in Sources */,
+				7424A6C62068DD660052374F /* LessonDataProvider.swift in Sources */,
+				74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

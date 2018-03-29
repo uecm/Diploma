@@ -30,6 +30,20 @@ class ScheduleViewController: UITableViewController {
     @IBAction func weekChanged(_ sender: UISegmentedControl) {
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            segue.identifier == "lessonInfoSegue",
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell) else {
+                return
+        }
+        let day = dataProvider.days()[indexPath.section]
+        let lesson = dataProvider.lessons(for: day, week: currentWeek)[indexPath.row]
+        if let destination = segue.destination as? LessonViewController {
+            destination.dataProvider.lesson = lesson
+        }
+    }
 }
 
 

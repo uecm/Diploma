@@ -40,5 +40,14 @@ extension TeacherListViewController {
 
 //MARK: Delegate
 extension TeacherListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let teacher = dataProvider.teachers[indexPath.row]
+        let destination = TeacherLessonListViewController(style: .grouped)
+        destination.lessons = dataProvider.lessons(for: teacher)
+        
+        navigationController?.show(destination, sender: self)
+    }
     
 }
