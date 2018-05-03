@@ -69,7 +69,7 @@ class DataManager {
     
     // MARK: - Write
     
-    func write<T>(object: T) where T: Object {
+    func write<T: Object>(object: T) {
         try! realm.write({
             realm.create(T.self, value: object, update: true)
         })

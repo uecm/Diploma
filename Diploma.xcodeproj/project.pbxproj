@@ -31,6 +31,7 @@
 		746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */; };
 		746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB54206AE30D0005B0F2 /* DataManager.swift */; };
 		746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */; };
+		74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D21E252074C7E5001DB723 /* NotificationManager.swift */; };
 		74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */; };
 		817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956EE0E630679BB03580EA /* Pods_Diploma.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonDataProvider.swift; sourceTree = "<group>"; };
 		746EEB54206AE30D0005B0F2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListDataProvider.swift; sourceTree = "<group>"; };
+		74D21E252074C7E5001DB723 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLessonListViewController.swift; sourceTree = "<group>"; };
 		804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.debug.xcconfig"; sourceTree = "<group>"; };
 		8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				74358470205BC0FB00DB0AE3 /* AppDelegate.swift */,
+				74D21E252074C7E5001DB723 /* NotificationManager.swift */,
 				746EEB54206AE30D0005B0F2 /* DataManager.swift */,
 				746EEB50206AD1640005B0F2 /* TextFieldCell.swift */,
 				7424A6A92063A99E0052374F /* Models */,
@@ -240,7 +243,6 @@
 				7435846A205BC0FB00DB0AE3 /* Frameworks */,
 				7435846B205BC0FB00DB0AE3 /* Resources */,
 				2A3F9FE5CCB4F0B38C1C34B5 /* [CP] Embed Pods Frameworks */,
-				6AF2AB6AD29CE5C619A96D7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,35 +309,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
-				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AF2AB6AD29CE5C619A96D7D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		88E6B1D774DE14E2BA7B8772 /* [CP] Check Pods Manifest.lock */ = {
@@ -385,6 +368,7 @@
 				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
 				7424A6C62068DD660052374F /* LessonDataProvider.swift in Sources */,
 				74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */,
+				74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
