@@ -1,0 +1,23 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - DateToolsSwift (2.0.3)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - DateToolsSwift
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+
+PODFILE CHECKSUM: 7a13051ef2ddefed80ded0c8c0e442a537121285
+
+COCOAPODS: 1.4.0
