@@ -15,7 +15,9 @@ class Subject: Object {
         case practice
     }
     
+    @objc dynamic var id: Int = 0
     @objc dynamic var name: String?
+    
     var type: SubjectType {
         get {
             return SubjectType(rawValue: subjectType) ?? .lecture
@@ -27,13 +29,19 @@ class Subject: Object {
     @objc dynamic private var subjectType: Int = 0
     
     override static func primaryKey() -> String? {
-        return "name"
+        return "id"
     }
     
     convenience init(name: String?, type: SubjectType?) {
         self.init()
         self.name = name
         self.type = type ?? .lecture
+    }
+    
+    convenience init(_ model: SubjectModel) {
+        self.init()
+        self.id = model.id
+        self.name = model.name
     }
     
 }

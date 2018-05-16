@@ -10,5 +10,8 @@ target 'Diploma' do
 	pod 'DateToolsSwift'
     pod 'RealmSwift'
     pod 'ActionSheetPicker-3.0'
-
+    pod 'Alamofire'
+    pod 'Moya'
+    
+    
 end

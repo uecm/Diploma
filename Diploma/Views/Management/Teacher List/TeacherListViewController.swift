@@ -32,7 +32,7 @@ extension TeacherListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let teacher = dataProvider.teachers[indexPath.row]
-        cell.textLabel?.text = (teacher.firstName ?? "") + (teacher.lastName ?? "")
+        cell.textLabel?.text = "asd"//(teacher.firstName ?? "") + (teacher.lastName ?? "")
         cell.detailTextLabel?.text = nil
         return cell
     }

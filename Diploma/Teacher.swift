@@ -18,8 +18,9 @@ class Teacher: Object {
         case PhD
     }
     
-    @objc dynamic var firstName: String?
-    @objc dynamic var lastName: String?
+    @objc dynamic var id: Int = 0
+    @objc dynamic var name: String?
+    
     var status: TeacherStatus? {
         get {
             return TeacherStatus(rawValue: privateStatus) ?? .assistant
@@ -32,19 +33,26 @@ class Teacher: Object {
     
     
     override static func primaryKey() -> String? {
-        return "firstName"
+        return "id"
     }
     
+    convenience init(_ model: TeacherModel) {
+        self.init(
+            id: model.id,
+            name: model.profile.name,
+            status: TeacherStatus(rawValue: model.status) ?? .teacher
+        )
+    }
     
-    convenience init(firstName: String?, lastName: String?, status: TeacherStatus) {
+    convenience init(id: Int, name: String?, status: TeacherStatus) {
         self.init()
-        self.firstName = firstName
-        self.lastName = lastName
+        self.id = id
+        self.name = name
         self.status = status
     }
     
     func fullName() -> String {
-        return (firstName ?? "") + (firstName != nil ? " " : "") + (lastName ?? "")
+        return name ?? ""
     }
     
 }

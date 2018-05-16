@@ -24,6 +24,11 @@ class TodayViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+
+        DataManager.shared.getMyTasks { (tasks) in
+            
+        }
+        
     }
     
     private func configureView() {

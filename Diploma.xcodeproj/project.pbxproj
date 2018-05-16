@@ -19,6 +19,18 @@
 		7424A6C12063BE440052374F /* ReportDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C02063BE430052374F /* ReportDataProvider.swift */; };
 		7424A6C42068DD5D0052374F /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C32068DD5D0052374F /* LessonViewController.swift */; };
 		7424A6C62068DD660052374F /* LessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C52068DD660052374F /* LessonDataProvider.swift */; };
+		7426B65E209B742C00612BAE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B65D209B742C00612BAE /* UserModel.swift */; };
+		7426B660209B743E00612BAE /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B65F209B743E00612BAE /* StudentModel.swift */; };
+		7426B662209B746300612BAE /* TeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B661209B746300612BAE /* TeacherModel.swift */; };
+		7426B664209B746E00612BAE /* SubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B663209B746E00612BAE /* SubjectModel.swift */; };
+		7426B666209B747A00612BAE /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B665209B747A00612BAE /* TaskModel.swift */; };
+		7426B66B209B7C4E00612BAE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B66A209B7C4E00612BAE /* APIService.swift */; };
+		7426B897209CD9A600612BAE /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B896209CD9A600612BAE /* Requests.swift */; };
+		7426B899209CDF4900612BAE /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B898209CDF4900612BAE /* APIProvider.swift */; };
+		7426B92D209DF34700612BAE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B92C209DF34700612BAE /* Student.swift */; };
+		7426B930209DF80900612BAE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B92F209DF80900612BAE /* Helpers.swift */; };
+		7426B934209DFC6600612BAE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7426B933209DFC6600612BAE /* LoginViewController.xib */; };
+		7426B937209DFC8500612BAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7426B936209DFC8500612BAE /* LoginViewController.swift */; };
 		74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74358470205BC0FB00DB0AE3 /* AppDelegate.swift */; };
 		74358478205BC0FB00DB0AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74358476205BC0FB00DB0AE3 /* Main.storyboard */; };
 		7435847A205BC0FB00DB0AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74358479205BC0FB00DB0AE3 /* Assets.xcassets */; };
@@ -31,6 +43,11 @@
 		746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */; };
 		746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB54206AE30D0005B0F2 /* DataManager.swift */; };
 		746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */; };
+		74B070B6209E0B5D00315498 /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070B5209E0B5D00315498 /* Authorizer.swift */; };
+		74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070B7209E0F8D00315498 /* AppCoordinator.swift */; };
+		74B070BB209EE3B400315498 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BA209EE3B400315498 /* SettingsViewController.swift */; };
+		74B070BD209EE96600315498 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BC209EE96600315498 /* User.swift */; };
+		74B070BF209F7DF200315498 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BE209F7DF200315498 /* Task.swift */; };
 		74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D21E252074C7E5001DB723 /* NotificationManager.swift */; };
 		74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */; };
 		817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956EE0E630679BB03580EA /* Pods_Diploma.framework */; };
@@ -49,6 +66,18 @@
 		7424A6C02063BE430052374F /* ReportDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataProvider.swift; sourceTree = "<group>"; };
 		7424A6C32068DD5D0052374F /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		7424A6C52068DD660052374F /* LessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDataProvider.swift; sourceTree = "<group>"; };
+		7426B65D209B742C00612BAE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7426B65F209B743E00612BAE /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		7426B661209B746300612BAE /* TeacherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherModel.swift; sourceTree = "<group>"; };
+		7426B663209B746E00612BAE /* SubjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModel.swift; sourceTree = "<group>"; };
+		7426B665209B747A00612BAE /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		7426B66A209B7C4E00612BAE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7426B896209CD9A600612BAE /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		7426B898209CDF4900612BAE /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		7426B92C209DF34700612BAE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		7426B92F209DF80900612BAE /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		7426B933209DFC6600612BAE /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7426B936209DFC8500612BAE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7435846D205BC0FB00DB0AE3 /* Diploma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diploma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74358470205BC0FB00DB0AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74358477205BC0FB00DB0AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +92,11 @@
 		746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonDataProvider.swift; sourceTree = "<group>"; };
 		746EEB54206AE30D0005B0F2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListDataProvider.swift; sourceTree = "<group>"; };
+		74B070B5209E0B5D00315498 /* Authorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorizer.swift; sourceTree = "<group>"; };
+		74B070B7209E0F8D00315498 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		74B070BA209EE3B400315498 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		74B070BC209EE96600315498 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74B070BE209F7DF200315498 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		74D21E252074C7E5001DB723 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLessonListViewController.swift; sourceTree = "<group>"; };
 		804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,11 +127,8 @@
 		7424A6A92063A99E0052374F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7424A6AA2063A9AC0052374F /* Lesson.swift */,
-				7424A6AC2063A9B30052374F /* Subject.swift */,
-				7424A6AE2063AAA00052374F /* Teacher.swift */,
-				7424A6B42063ABE30052374F /* StudentGroup.swift */,
-				7424A6B22063AAB00052374F /* Day.swift */,
+				7426B65C209B741900612BAE /* Network models */,
+				7426B92E209DF38E00612BAE /* Realm */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -129,6 +160,57 @@
 			path = Subject;
 			sourceTree = "<group>";
 		};
+		7426B65C209B741900612BAE /* Network models */ = {
+			isa = PBXGroup;
+			children = (
+				7426B65D209B742C00612BAE /* UserModel.swift */,
+				7426B65F209B743E00612BAE /* StudentModel.swift */,
+				7426B661209B746300612BAE /* TeacherModel.swift */,
+				7426B663209B746E00612BAE /* SubjectModel.swift */,
+				7426B665209B747A00612BAE /* TaskModel.swift */,
+			);
+			name = "Network models";
+			sourceTree = "<group>";
+		};
+		7426B669209B7C3C00612BAE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7426B66A209B7C4E00612BAE /* APIService.swift */,
+				7426B898209CDF4900612BAE /* APIProvider.swift */,
+				7426B896209CD9A600612BAE /* Requests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7426B92E209DF38E00612BAE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				74B070BC209EE96600315498 /* User.swift */,
+				74B070BE209F7DF200315498 /* Task.swift */,
+				7424A6AA2063A9AC0052374F /* Lesson.swift */,
+				7426B92C209DF34700612BAE /* Student.swift */,
+				7424A6AC2063A9B30052374F /* Subject.swift */,
+				7424A6AE2063AAA00052374F /* Teacher.swift */,
+				7424A6B42063ABE30052374F /* StudentGroup.swift */,
+				7424A6B22063AAB00052374F /* Day.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		7426B935209DFC7400612BAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74358484205BC72800DB0AE3 /* Today */,
+				7424A6B82063B5730052374F /* Schedule */,
+				7424A6BD2063BE230052374F /* Report */,
+				7424A6C22068DD4C0052374F /* Subject */,
+				746EEB43206ACD0C0005B0F2 /* Management */,
+				74B070B4209E07E800315498 /* Login */,
+				74B070BA209EE3B400315498 /* SettingsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		74358464205BC0FB00DB0AE3 = {
 			isa = PBXGroup;
 			children = (
@@ -151,15 +233,12 @@
 			isa = PBXGroup;
 			children = (
 				74358470205BC0FB00DB0AE3 /* AppDelegate.swift */,
-				74D21E252074C7E5001DB723 /* NotificationManager.swift */,
-				746EEB54206AE30D0005B0F2 /* DataManager.swift */,
+				74B070B9209E121300315498 /* Managers */,
 				746EEB50206AD1640005B0F2 /* TextFieldCell.swift */,
+				7426B92F209DF80900612BAE /* Helpers.swift */,
+				7426B669209B7C3C00612BAE /* Networking */,
 				7424A6A92063A99E0052374F /* Models */,
-				74358484205BC72800DB0AE3 /* Today */,
-				7424A6B82063B5730052374F /* Schedule */,
-				7424A6BD2063BE230052374F /* Report */,
-				7424A6C22068DD4C0052374F /* Subject */,
-				746EEB43206ACD0C0005B0F2 /* Management */,
+				7426B935209DFC7400612BAE /* Views */,
 				74358476205BC0FB00DB0AE3 /* Main.storyboard */,
 				74358479205BC0FB00DB0AE3 /* Assets.xcassets */,
 				7435847B205BC0FB00DB0AE3 /* LaunchScreen.storyboard */,
@@ -212,6 +291,26 @@
 				746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */,
 			);
 			path = "Add Lesson";
+			sourceTree = "<group>";
+		};
+		74B070B4209E07E800315498 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7426B936209DFC8500612BAE /* LoginViewController.swift */,
+				7426B933209DFC6600612BAE /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		74B070B9209E121300315498 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				74B070B7209E0F8D00315498 /* AppCoordinator.swift */,
+				74D21E252074C7E5001DB723 /* NotificationManager.swift */,
+				746EEB54206AE30D0005B0F2 /* DataManager.swift */,
+				74B070B5209E0B5D00315498 /* Authorizer.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		74DDD0E3206CFCF20064921F /* TeacherLessonListViewController */ = {
@@ -295,6 +394,7 @@
 				7435847D205BC0FB00DB0AE3 /* LaunchScreen.storyboard in Resources */,
 				7435847A205BC0FB00DB0AE3 /* Assets.xcassets in Resources */,
 				74358478205BC0FB00DB0AE3 /* Main.storyboard in Resources */,
+				7426B934209DFC6600612BAE /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +409,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,18 +457,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */,
+				74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */,
+				7426B937209DFC8500612BAE /* LoginViewController.swift in Sources */,
 				74358486205BC73C00DB0AE3 /* TodayViewController.swift in Sources */,
+				7426B899209CDF4900612BAE /* APIProvider.swift in Sources */,
+				74B070BB209EE3B400315498 /* SettingsViewController.swift in Sources */,
+				7426B66B209B7C4E00612BAE /* APIService.swift in Sources */,
+				7426B930209DF80900612BAE /* Helpers.swift in Sources */,
 				74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */,
 				7424A6BC2063B5A20052374F /* ScheduleDataProvider.swift in Sources */,
+				7426B662209B746300612BAE /* TeacherModel.swift in Sources */,
 				7424A6AB2063A9AC0052374F /* Lesson.swift in Sources */,
+				7426B666209B747A00612BAE /* TaskModel.swift in Sources */,
 				746EEB47206ACE900005B0F2 /* AddLessonViewController.swift in Sources */,
 				746EEB4B206ACEC10005B0F2 /* TeacherViewController.swift in Sources */,
 				7424A6C12063BE440052374F /* ReportDataProvider.swift in Sources */,
 				7424A6AD2063A9B30052374F /* Subject.swift in Sources */,
 				7424A6B72063AD0E0052374F /* TodayDataProvider.swift in Sources */,
+				74B070B6209E0B5D00315498 /* Authorizer.swift in Sources */,
 				746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */,
+				7426B92D209DF34700612BAE /* Student.swift in Sources */,
 				7424A6BA2063B5920052374F /* ScheduleViewController.swift in Sources */,
 				7424A6B32063AAB00052374F /* Day.swift in Sources */,
+				7426B664209B746E00612BAE /* SubjectModel.swift in Sources */,
+				74B070BD209EE96600315498 /* User.swift in Sources */,
 				746EEB51206AD1640005B0F2 /* TextFieldCell.swift in Sources */,
 				7424A6BF2063BE350052374F /* ReportViewController.swift in Sources */,
 				7424A6AF2063AAA00052374F /* Teacher.swift in Sources */,
@@ -366,8 +488,12 @@
 				7424A6B52063ABE30052374F /* StudentGroup.swift in Sources */,
 				746EEB49206ACEA90005B0F2 /* TeacherListViewController.swift in Sources */,
 				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
+				7426B65E209B742C00612BAE /* UserModel.swift in Sources */,
+				7426B897209CD9A600612BAE /* Requests.swift in Sources */,
+				74B070BF209F7DF200315498 /* Task.swift in Sources */,
 				7424A6C62068DD660052374F /* LessonDataProvider.swift in Sources */,
 				74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */,
+				7426B660209B743E00612BAE /* StudentModel.swift in Sources */,
 				74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

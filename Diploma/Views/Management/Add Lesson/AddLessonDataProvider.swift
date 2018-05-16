@@ -6,7 +6,7 @@
 //  Copyright © 2018 egor. All rights reserved.
 //
 
-import RealmSwift
+import Realm
 
 class AddLessonDataProvider {
     
