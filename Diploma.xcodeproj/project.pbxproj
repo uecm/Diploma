@@ -151,13 +151,13 @@
 			path = Report;
 			sourceTree = "<group>";
 		};
-		7424A6C22068DD4C0052374F /* Subject */ = {
+		7424A6C22068DD4C0052374F /* Task */ = {
 			isa = PBXGroup;
 			children = (
 				7424A6C32068DD5D0052374F /* StudyTaskViewController.swift */,
 				7424A6C52068DD660052374F /* StudyTaskDataProvider.swift */,
 			);
-			path = Subject;
+			path = Task;
 			sourceTree = "<group>";
 		};
 		7426B65C209B741900612BAE /* Network models */ = {
@@ -203,7 +203,7 @@
 				74358484205BC72800DB0AE3 /* Today */,
 				7424A6B82063B5730052374F /* Schedule */,
 				7424A6BD2063BE230052374F /* Report */,
-				7424A6C22068DD4C0052374F /* Subject */,
+				7424A6C22068DD4C0052374F /* Task */,
 				746EEB43206ACD0C0005B0F2 /* Management */,
 				74B070B4209E07E800315498 /* Login */,
 				74B070BA209EE3B400315498 /* SettingsViewController.swift */,

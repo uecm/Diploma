@@ -103,9 +103,9 @@
         <!--Создать Отчет-->
         <scene sceneID="HXt-hP-KcN">
             <objects>
-                <tableViewController title="Создать Отчет" id="Kex-Qg-BU0" sceneMemberID="viewController">
+                <tableViewController title="Создать Отчет" id="Kex-Qg-BU0" customClass="ReportViewController" customModule="Diploma" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="66d-Ad-oUB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -148,7 +148,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATd-hz-uSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721" y="-523"/>
+            <point key="canvasLocation" x="3745" y="-1226"/>
         </scene>
         <!--Нагрузка-->
         <scene sceneID="bcc-lI-aPz">
@@ -570,6 +570,9 @@
                             <outlet property="delegate" destination="YQa-JP-yWK" id="ppL-aT-1oA"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="Kex-Qg-BU0" kind="show" identifier="makeReport" id="LXw-73-y6v"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNK-Oc-Hdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

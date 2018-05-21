@@ -9,5 +9,7 @@
 import UIKit
 
 class ReportViewController: UITableViewController {
+ 
+    lazy var dataProvider = ReportDataProvider()
     
 }
