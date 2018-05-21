@@ -47,8 +47,8 @@ extension TeacherLessonListViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         if let lesson = lessons?[indexPath.row] {
-            if let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LessonViewController") as? LessonViewController {
-                destination.dataProvider.lesson = lesson
+            if let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LessonViewController") as? StudyTaskViewController {
+//                destination.dataProvider.lesson = lesson
                 navigationController?.show(destination, sender: self)
             }
         }

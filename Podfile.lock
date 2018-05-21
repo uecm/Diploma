@@ -22,7 +22,7 @@ DEPENDENCIES:
   - RealmSwift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - ActionSheetPicker-3.0
     - Alamofire
     - DateToolsSwift
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 98a92a01912f43fb5abec95e50370934274fa6fb
+PODFILE CHECKSUM: f410fa80c29510f6de3e3357f17e14b0f27930c9
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2

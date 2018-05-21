@@ -15,11 +15,14 @@ enum APIService {
     case addStudent(model: StudentModel)
     case myTasks
     case allTasks
+    
+    static let host = "192.168.30.83"
 }
 
 
 extension APIService: TargetType {
-    var baseURL: URL { return URL(string: "http://localhost:8080")! }
+    
+    var baseURL: URL { return URL(string: "http://\(APIService.host):8080")! }
     
     
     var path: String {

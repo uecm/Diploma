@@ -9,6 +9,7 @@
 import Moya
 
 class APIProvider: MoyaProvider<APIService> {
+    
     static let shared = APIProvider(
         plugins: [AccessTokenPlugin(tokenClosure: Authorizer.authToken ?? "")]
     )

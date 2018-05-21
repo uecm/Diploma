@@ -8,12 +8,24 @@
 
 import RealmSwift
 
-class StudyTask: Object {
+final class StudyTask: Object {
+    enum TaskStatus: Int {
+        case new = 0
+        case inProgress = 1
+        case pendingReview = 2
+        case completed = 3
+    }
     
     @objc dynamic var id: Int = 0
     @objc dynamic var text: String?
     @objc dynamic var startDate: Date?
     @objc dynamic var endDate: Date?
+    
+    var status: TaskStatus {
+        get { return TaskStatus(rawValue: statusPrivate) ?? .new }
+        set { statusPrivate = newValue.rawValue }
+    }
+    @objc private dynamic var statusPrivate: Int = TaskStatus.new.rawValue
     
     @objc dynamic var subject: Subject?
     @objc dynamic var student: Student?
@@ -29,6 +41,7 @@ class StudyTask: Object {
         self.text = model.description
         self.startDate = Date(timeIntervalSince1970: TimeInterval(model.startDate))
         self.endDate = Date(timeIntervalSince1970: TimeInterval(model.endDate))
+        self.statusPrivate = model.status
         
         self.subject = Subject(model.subject)
         self.student = Student(model.student)

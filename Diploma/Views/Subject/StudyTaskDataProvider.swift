@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LessonDataProvider {
-    var lesson: Lesson?
+class StudyTaskDataProvider {
+    var task: StudyTask?
     
 }

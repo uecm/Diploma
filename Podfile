@@ -7,7 +7,8 @@ target 'Diploma' do
 
 
   # Pods for Diploma
-	pod 'DateToolsSwift'
+    
+    pod 'DateToolsSwift'
     pod 'RealmSwift'
     pod 'ActionSheetPicker-3.0'
     pod 'Alamofire'

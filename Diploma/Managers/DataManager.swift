@@ -64,17 +64,17 @@ class DataManager {
     
     //MARK: - Repository
     
-    func getMyTasks(callback: Closure<[StudyTask]>) {
+    func getMyTasks(callback: Closure<[StudyTask]>, update: Closure<[StudyTask]> = nil) {
         callback?(localMyTasks)
         
         APIProvider.shared.getMyTasks { (models) in
             let realmModels = models.map(StudyTask.init)
             self.update(objects: realmModels)
-            callback?(realmModels)
+            update?(realmModels)
         }
     }
     
-    func getCurrentUser(callback: Closure<User?> = nil) {
+    func getCurrentUser(callback: Closure<User?> = nil, update: Closure<User?> = nil) {
         
         callback?(currentUser)
         
@@ -86,12 +86,12 @@ class DataManager {
             let user = User(model)
             self.write(object: user)
             
-            callback?(user)
+            update?(user)
         }
     }
     
     
-    func getStudnets(callback: Closure<[Student]> = nil) {
+    func getStudnets(callback: Closure<[Student]> = nil, update: Closure<[Student]> = nil) {
         callback?(localStudents)
         
         APIProvider.shared.getStudents { students in
