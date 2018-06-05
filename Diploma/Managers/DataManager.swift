@@ -67,10 +67,10 @@ class DataManager {
     func getMyTasks(callback: Closure<[StudyTask]>, update: Closure<[StudyTask]> = nil) {
         callback?(localMyTasks)
         
-        APIProvider.shared.getMyTasks { (models) in
+        APIProvider.shared.getMyTasks { [unowned self] (models) in
             let realmModels = models.map(StudyTask.init)
             self.update(objects: realmModels)
-            update?(realmModels)
+            update?(self.localMyTasks)
         }
     }
     

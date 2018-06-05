@@ -29,21 +29,6 @@ class StudyTaskViewController: UITableViewController {
         }
     }
     
-    
-    
-    
-    private func textForTaskStatus(_ status: StudyTask.TaskStatus) -> String {
-        switch status {
-        case .completed:
-            return "Завершено"
-        case .inProgress:
-            return "В процессе"
-        case .new:
-            return "Новое задание"
-        case .pendingReview:
-            return "Ожидает проверки"
-        }
-    }
 }
 
 extension StudyTaskViewController {
@@ -52,7 +37,7 @@ extension StudyTaskViewController {
         guard let task = dataProvider.task else {
             return 0
         }
-        return task.status == .new ? 2 : 1
+        return (task.status == .new || task.status == .inProgress) ? 2 : 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,7 +76,7 @@ extension StudyTaskViewController {
                 cell.detailTextLabel?.text = task.teacher?.fullName()
             case 3:
                 cell.textLabel?.text = "Статус"
-                cell.detailTextLabel?.text = textForTaskStatus(task.status)
+                cell.detailTextLabel?.text = StudyTask.textForTaskStatus(task.status)
             default:
                 return
             }

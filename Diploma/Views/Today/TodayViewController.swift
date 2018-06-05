@@ -28,7 +28,7 @@ class TodayViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Сегодня"
+//        title = "Сегодня"
         configureView()
     }
     

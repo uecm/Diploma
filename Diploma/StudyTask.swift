@@ -48,5 +48,29 @@ final class StudyTask: Object {
         self.teacher = Teacher(model.teacher)
     }
     
+    static func textForTaskStatus(_ status: StudyTask.TaskStatus) -> String {
+        switch status {
+        case .completed:
+            return "Завершено"
+        case .inProgress:
+            return "В процессе"
+        case .new:
+            return "Новое задание"
+        case .pendingReview:
+            return "Ожидает проверки"
+        }
+    }
     
+    static func color(for status: StudyTask.TaskStatus) -> UIColor {
+        switch status {
+        case .completed:
+            return #colorLiteral(red: 0.2039215686, green: 0.8549019608, blue: 0.431372549, alpha: 1)
+        case .inProgress:
+            return #colorLiteral(red: 0, green: 0.4901960784, blue: 0.9803921569, alpha: 1)
+        case .new:
+            return #colorLiteral(red: 0.2705882353, green: 0.7882352941, blue: 0.968627451, alpha: 1)
+        case .pendingReview:
+            return #colorLiteral(red: 1, green: 0.5725490196, blue: 0.1490196078, alpha: 1)
+        }
+    }
 }

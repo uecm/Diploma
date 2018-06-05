@@ -13,8 +13,8 @@
 		7424A6B32063AAB00052374F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B22063AAB00052374F /* Day.swift */; };
 		7424A6B52063ABE30052374F /* StudentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B42063ABE30052374F /* StudentGroup.swift */; };
 		7424A6B72063AD0E0052374F /* TodayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B62063AD0E0052374F /* TodayDataProvider.swift */; };
-		7424A6BA2063B5920052374F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B92063B5920052374F /* ScheduleViewController.swift */; };
-		7424A6BC2063B5A20052374F /* ScheduleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */; };
+		7424A6BA2063B5920052374F /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6B92063B5920052374F /* SubjectsViewController.swift */; };
+		7424A6BC2063B5A20052374F /* SubjectsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BB2063B5A20052374F /* SubjectsDataProvider.swift */; };
 		7424A6BF2063BE350052374F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6BE2063BE350052374F /* ReportViewController.swift */; };
 		7424A6C12063BE440052374F /* ReportDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C02063BE430052374F /* ReportDataProvider.swift */; };
 		7424A6C42068DD5D0052374F /* StudyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A6C32068DD5D0052374F /* StudyTaskViewController.swift */; };
@@ -48,10 +48,13 @@
 		74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070B7209E0F8D00315498 /* AppCoordinator.swift */; };
 		74B070BB209EE3B400315498 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BA209EE3B400315498 /* SettingsViewController.swift */; };
 		74B070BD209EE96600315498 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BC209EE96600315498 /* User.swift */; };
-		74B070BF209F7DF200315498 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BE209F7DF200315498 /* Task.swift */; };
+		74B070BF209F7DF200315498 /* StudyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070BE209F7DF200315498 /* StudyTask.swift */; };
 		74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D21E252074C7E5001DB723 /* NotificationManager.swift */; };
 		74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */; };
 		817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956EE0E630679BB03580EA /* Pods_Diploma.framework */; };
+		DFADF24B20C6B6CF00FE91BD /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */; };
+		DFADF24E20C6B6ED00FE91BD /* TaskListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */; };
+		DFADF25120C6C60100FE91BD /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +64,8 @@
 		7424A6B22063AAB00052374F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		7424A6B42063ABE30052374F /* StudentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGroup.swift; sourceTree = "<group>"; };
 		7424A6B62063AD0E0052374F /* TodayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDataProvider.swift; sourceTree = "<group>"; };
-		7424A6B92063B5920052374F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataProvider.swift; sourceTree = "<group>"; };
+		7424A6B92063B5920052374F /* SubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
+		7424A6BB2063B5A20052374F /* SubjectsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsDataProvider.swift; sourceTree = "<group>"; };
 		7424A6BE2063BE350052374F /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		7424A6C02063BE430052374F /* ReportDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataProvider.swift; sourceTree = "<group>"; };
 		7424A6C32068DD5D0052374F /* StudyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTaskViewController.swift; sourceTree = "<group>"; };
@@ -98,11 +101,14 @@
 		74B070B7209E0F8D00315498 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		74B070BA209EE3B400315498 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		74B070BC209EE96600315498 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		74B070BE209F7DF200315498 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		74B070BE209F7DF200315498 /* StudyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTask.swift; sourceTree = "<group>"; };
 		74D21E252074C7E5001DB723 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLessonListViewController.swift; sourceTree = "<group>"; };
 		804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.debug.xcconfig"; sourceTree = "<group>"; };
 		8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.release.xcconfig"; sourceTree = "<group>"; };
+		DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataProvider.swift; sourceTree = "<group>"; };
+		DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
 		E0956EE0E630679BB03580EA /* Pods_Diploma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diploma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,13 +141,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		7424A6B82063B5730052374F /* Schedule */ = {
+		7424A6B82063B5730052374F /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
-				7424A6B92063B5920052374F /* ScheduleViewController.swift */,
-				7424A6BB2063B5A20052374F /* ScheduleDataProvider.swift */,
+				7424A6B92063B5920052374F /* SubjectsViewController.swift */,
+				7424A6BB2063B5A20052374F /* SubjectsDataProvider.swift */,
 			);
-			path = Schedule;
+			path = Subjects;
 			sourceTree = "<group>";
 		};
 		7424A6BD2063BE230052374F /* Report */ = {
@@ -188,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				74B070BC209EE96600315498 /* User.swift */,
-				74B070BE209F7DF200315498 /* Task.swift */,
+				74B070BE209F7DF200315498 /* StudyTask.swift */,
 				7424A6AA2063A9AC0052374F /* Lesson.swift */,
 				7426B92C209DF34700612BAE /* Student.swift */,
 				7424A6AC2063A9B30052374F /* Subject.swift */,
@@ -203,12 +209,14 @@
 			isa = PBXGroup;
 			children = (
 				74358484205BC72800DB0AE3 /* Today */,
-				7424A6B82063B5730052374F /* Schedule */,
+				7424A6B82063B5730052374F /* Subjects */,
+				DFADF24C20C6B6D300FE91BD /* Task List */,
 				7424A6BD2063BE230052374F /* Report */,
 				7424A6C22068DD4C0052374F /* Task */,
-				746EEB43206ACD0C0005B0F2 /* Management */,
 				74B070B4209E07E800315498 /* Login */,
+				DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */,
 				74B070BA209EE3B400315498 /* SettingsViewController.swift */,
+				DFADF24F20C6C5A700FE91BD /* DEPRECATED */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +330,23 @@
 				74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */,
 			);
 			path = TeacherLessonListViewController;
+			sourceTree = "<group>";
+		};
+		DFADF24C20C6B6D300FE91BD /* Task List */ = {
+			isa = PBXGroup;
+			children = (
+				DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */,
+				DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */,
+			);
+			path = "Task List";
+			sourceTree = "<group>";
+		};
+		DFADF24F20C6C5A700FE91BD /* DEPRECATED */ = {
+			isa = PBXGroup;
+			children = (
+				746EEB43206ACD0C0005B0F2 /* Management */,
+			);
+			path = DEPRECATED;
 			sourceTree = "<group>";
 		};
 		E0CF29713F9E13DC3084963C /* Pods */ = {
@@ -463,13 +488,16 @@
 				74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */,
 				7426B937209DFC8500612BAE /* LoginViewController.swift in Sources */,
 				74358486205BC73C00DB0AE3 /* TodayViewController.swift in Sources */,
+				DFADF24B20C6B6CF00FE91BD /* TaskListViewController.swift in Sources */,
 				7426B899209CDF4900612BAE /* APIProvider.swift in Sources */,
 				74B070BB209EE3B400315498 /* SettingsViewController.swift in Sources */,
 				7426B66B209B7C4E00612BAE /* APIService.swift in Sources */,
 				7426B930209DF80900612BAE /* Helpers.swift in Sources */,
 				74AABC0620B88D1700933D2E /* TableOrganizer.swift in Sources */,
 				74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */,
-				7424A6BC2063B5A20052374F /* ScheduleDataProvider.swift in Sources */,
+				DFADF24E20C6B6ED00FE91BD /* TaskListDataProvider.swift in Sources */,
+				7424A6BC2063B5A20052374F /* SubjectsDataProvider.swift in Sources */,
+				DFADF25120C6C60100FE91BD /* MaterialsViewController.swift in Sources */,
 				7426B662209B746300612BAE /* TeacherModel.swift in Sources */,
 				7424A6AB2063A9AC0052374F /* Lesson.swift in Sources */,
 				7426B666209B747A00612BAE /* TaskModel.swift in Sources */,
@@ -481,7 +509,7 @@
 				74B070B6209E0B5D00315498 /* Authorizer.swift in Sources */,
 				746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */,
 				7426B92D209DF34700612BAE /* Student.swift in Sources */,
-				7424A6BA2063B5920052374F /* ScheduleViewController.swift in Sources */,
+				7424A6BA2063B5920052374F /* SubjectsViewController.swift in Sources */,
 				7424A6B32063AAB00052374F /* Day.swift in Sources */,
 				7426B664209B746E00612BAE /* SubjectModel.swift in Sources */,
 				74B070BD209EE96600315498 /* User.swift in Sources */,
@@ -494,7 +522,7 @@
 				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
 				7426B65E209B742C00612BAE /* UserModel.swift in Sources */,
 				7426B897209CD9A600612BAE /* Requests.swift in Sources */,
-				74B070BF209F7DF200315498 /* Task.swift in Sources */,
+				74B070BF209F7DF200315498 /* StudyTask.swift in Sources */,
 				7424A6C62068DD660052374F /* StudyTaskDataProvider.swift in Sources */,
 				74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */,
 				7426B660209B743E00612BAE /* StudentModel.swift in Sources */,

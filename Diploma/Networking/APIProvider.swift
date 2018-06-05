@@ -11,8 +11,12 @@ import Moya
 class APIProvider: MoyaProvider<APIService> {
     
     static let shared = APIProvider(
-        plugins: [AccessTokenPlugin(tokenClosure: Authorizer.authToken ?? "")]
+        plugins: [authPlugin]
     )
+    
+    static var authPlugin: AccessTokenPlugin {
+        return AccessTokenPlugin(tokenClosure: Authorizer.authToken ?? "")
+    }
     
     var requests = [Cancellable]()
 
@@ -24,8 +28,20 @@ class APIProvider: MoyaProvider<APIService> {
         
         let request = super.request(target,
                                     callbackQueue: callbackQueue,
-                                    progress: progress,
-                                    completion: completion)
+                                    progress: progress)
+        { result in
+            
+            switch target {
+            case .login(email: _, password: _):
+                break
+            default:
+                if let statusCode = result.value?.statusCode, statusCode == 401 {
+                    // Unauthorize
+                    return Authorizer.logout()
+                }
+            }
+            completion(result)
+        }
         requests.append(request)
         
         return request

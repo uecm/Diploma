@@ -85,7 +85,8 @@ class AddLessonViewController: UITableViewController {
         case 2:
             return DataManager.shared.groups.map({ $0.name ?? "No name" })
         case 3:
-            return ScheduleDataProvider().dayNames
+            return ["nothing"]
+//            return SubjectsDataProvider().dayNames
         case 4:
             return ["1", "2"]
         default:
@@ -103,8 +104,9 @@ class AddLessonViewController: UITableViewController {
         case 2:
             lesson.studentGroup = DataManager.shared.groups[objectIndex]
         case 3:
-            let dayName = ScheduleDataProvider().dayNames[objectIndex]
-            lesson.weekday = Day(name: dayName, weekday: objectIndex + 1)
+            break
+//            let dayName = SubjectsDataProvider().dayNames[objectIndex]
+//            lesson.weekday = Day(name: dayName, weekday: objectIndex + 1)
         case 4:
             lesson.week = objectIndex + 1
         default:
