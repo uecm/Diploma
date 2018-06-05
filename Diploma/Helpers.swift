@@ -11,7 +11,6 @@ import UIKit.UIAlertController
 typealias Closure<T> = ((_ callback: T) -> Void)?
 typealias Callback = (() -> Void)?
 
-
 var currentUserID: Int {
     get {
         return UserDefaults.standard.integer(forKey: "_currentUserId")

@@ -12,4 +12,33 @@ class ReportViewController: UITableViewController {
  
     lazy var dataProvider = ReportDataProvider()
     
+    
+    
+}
+
+
+//MARK: UITableViewDataSource
+extension ReportViewController {
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return tableMap.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableMap[section].count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = tableMap[indexPath.section][indexPath.row]
+        let identifier = TableRowType.identifier(for: item.type)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier)!
+        return cell
+    }
+}
+
+
+//MARK: UITableViewDelegate
+extension ReportViewController {
+    var tableMap: TableMap {
+        return [ ]
+    }
 }
