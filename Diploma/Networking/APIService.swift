@@ -16,9 +16,10 @@ enum APIService {
     case myTasks
     case allTasks
     case books
-    case downloadFile(link: String)
+    case downloadFile(path: String)
+    case taskAttachments(taskId: Int)
     
-    static let host = "192.168.0.101"
+    static let host = "192.168.30.83"
     
     static let DefaultDownloadDestination: DownloadDestination = { temporaryURL, response in
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -31,15 +32,7 @@ enum APIService {
 extension APIService: TargetType {
     
     var baseURL: URL {
-        switch self {
-        case .downloadFile(let link):
-            guard let url = URL(string: link) else {
-                fatalError("Could not build a url with link: \(link)")
-            }
-            return url
-        default:
-            return URL(string: "http://\(APIService.host):8080")!
-        }
+        return URL(string: "http://\(APIService.host):8080")!
     }
     
     
@@ -60,16 +53,18 @@ extension APIService: TargetType {
             return "/task"
         case .books:
             return "file/books"
-        default:
-            return ""
+        case .downloadFile(path: _):
+            return "file/download"
+        case let .taskAttachments(taskId: taskId):
+            return "task/attachments/\(taskId)"
         }
     }
     
     var method: Method {
         switch self {
-        case .user, .students, .myTasks, .allTasks, .books, .downloadFile(_):
+        case .user, .students, .myTasks, .allTasks, .books, .taskAttachments(taskId: _):
             return .get
-        case .login, .addStudent(model: _):
+        case .login, .addStudent(model: _), .downloadFile(_):
             return .post
         }
     }
@@ -80,12 +75,15 @@ extension APIService: TargetType {
     
     var task: Task {
         switch self {
-        case .login, .user, .students, .myTasks, .allTasks, .books:
+        case .login, .user, .students, .myTasks, .allTasks, .books, .taskAttachments(taskId: _):
             return .requestPlain
-        case .downloadFile(_):
-            return .downloadDestination(APIService.DefaultDownloadDestination)
+        
+        case .downloadFile(let path):
+            return .requestParameters(parameters: ["path" : path], encoding: JSONEncoding.default)
+            
         case let .addStudent(model: model):
             return .requestJSONEncodable(model)
+
         }
     }
     

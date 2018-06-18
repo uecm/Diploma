@@ -10,7 +10,7 @@ import Foundation
 
 struct DocumentFile: Codable {
     let name: String
-    let link: String
+    let path: String
     
     var rawName: String {
         return (name as NSString).deletingLastPathComponent

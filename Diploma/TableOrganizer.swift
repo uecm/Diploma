@@ -29,11 +29,13 @@ struct TableRow {
     let title: String?
     let detail: String?
     let type: TableRowType
+    let accessoryType: UITableViewCellAccessoryType?
     
-    init(title: String, detail: String? = nil, type: TableRowType? = nil) {
+    init(title: String, detail: String? = nil, type: TableRowType? = nil, accessory: UITableViewCellAccessoryType = .none) {
         self.title = title
         self.detail = detail
         self.type = type ?? .plain
+        self.accessoryType = accessory
     }
     
 }

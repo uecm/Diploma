@@ -56,6 +56,9 @@
 		74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D21E252074C7E5001DB723 /* NotificationManager.swift */; };
 		74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */; };
 		817CB90F92B1E1C0D95FE072 /* Pods_Diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956EE0E630679BB03580EA /* Pods_Diploma.framework */; };
+		DF22DC7720D7DAAE00D353EA /* PDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF22DC7620D7DAAE00D353EA /* PDFViewController.xib */; };
+		DF22DC7920D7DB4900D353EA /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22DC7820D7DB4900D353EA /* PDFViewController.swift */; };
+		DF22DC7B20D7F5C100D353EA /* TaskAttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22DC7A20D7F5C100D353EA /* TaskAttachmentModel.swift */; };
 		DFADF24B20C6B6CF00FE91BD /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */; };
 		DFADF24E20C6B6ED00FE91BD /* TaskListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */; };
 		DFADF25120C6C60100FE91BD /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */; };
@@ -114,6 +117,9 @@
 		74DDD0E4206CFD0A0064921F /* TeacherLessonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLessonListViewController.swift; sourceTree = "<group>"; };
 		804CE968052D01A3752F8771 /* Pods-Diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.debug.xcconfig"; sourceTree = "<group>"; };
 		8751BC054FAB5F698EF6A59E /* Pods-Diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diploma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diploma/Pods-Diploma.release.xcconfig"; sourceTree = "<group>"; };
+		DF22DC7620D7DAAE00D353EA /* PDFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFViewController.xib; sourceTree = "<group>"; };
+		DF22DC7820D7DB4900D353EA /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		DF22DC7A20D7F5C100D353EA /* TaskAttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAttachmentModel.swift; sourceTree = "<group>"; };
 		DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataProvider.swift; sourceTree = "<group>"; };
 		DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +192,7 @@
 				7426B663209B746E00612BAE /* SubjectModel.swift */,
 				7426B665209B747A00612BAE /* TaskModel.swift */,
 				74A2035A20C719DD00C849A5 /* DocumentFile.swift */,
+				DF22DC7A20D7F5C100D353EA /* TaskAttachmentModel.swift */,
 			);
 			name = "Network models";
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 		7426B935209DFC7400612BAE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF22DC7520D7DA9100D353EA /* PDF View */,
 				74358484205BC72800DB0AE3 /* Today */,
 				7424A6B82063B5730052374F /* Subjects */,
 				DFADF24C20C6B6D300FE91BD /* Task List */,
@@ -360,6 +368,15 @@
 			path = TeacherLessonListViewController;
 			sourceTree = "<group>";
 		};
+		DF22DC7520D7DA9100D353EA /* PDF View */ = {
+			isa = PBXGroup;
+			children = (
+				DF22DC7620D7DAAE00D353EA /* PDFViewController.xib */,
+				DF22DC7820D7DB4900D353EA /* PDFViewController.swift */,
+			);
+			path = "PDF View";
+			sourceTree = "<group>";
+		};
 		DFADF24C20C6B6D300FE91BD /* Task List */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF22DC7720D7DAAE00D353EA /* PDFViewController.xib in Resources */,
 				7435847D205BC0FB00DB0AE3 /* LaunchScreen.storyboard in Resources */,
 				7435847A205BC0FB00DB0AE3 /* Assets.xcassets in Resources */,
 				74358478205BC0FB00DB0AE3 /* Main.storyboard in Resources */,
@@ -512,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF22DC7B20D7F5C100D353EA /* TaskAttachmentModel.swift in Sources */,
 				746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */,
 				74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */,
 				7426B937209DFC8500612BAE /* LoginViewController.swift in Sources */,
@@ -539,6 +558,7 @@
 				746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */,
 				7426B92D209DF34700612BAE /* Student.swift in Sources */,
 				7424A6BA2063B5920052374F /* SubjectsViewController.swift in Sources */,
+				DF22DC7920D7DB4900D353EA /* PDFViewController.swift in Sources */,
 				7424A6B32063AAB00052374F /* Day.swift in Sources */,
 				74A2036320C72F5600C849A5 /* EducationalMaterial.swift in Sources */,
 				7426B664209B746E00612BAE /* SubjectModel.swift in Sources */,

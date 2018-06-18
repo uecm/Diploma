@@ -29,18 +29,17 @@ class DocumentListViewController: UITableViewController {
     }
     
     private func loadFile(_ file: DocumentFile) {
-        dataProvider.downloadFile(file) { [weak self] (document) in
-            guard let document = document else { return }
-            self?.showPDF(document)
-        }
-    }
-    
-    private func showPDF(_ pdf: PDFDocument) {
-        let view = PDFView()
-        view.frame = self.view.frame
-        view.document = pdf
         
-        self.view.addSubview(view)
+        let pdfController = PDFViewController(nibName: "PDFViewController", bundle: nil)
+    
+        present(pdfController, animated: true, completion: nil)
+        
+        dataProvider.downloadFile(file) { (document) in
+            guard let document = document else { return }
+            
+            let doc = PDFViewController.Document(pdf: document, name: file.name)
+            pdfController.document = doc
+        }
     }
 }
 

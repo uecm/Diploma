@@ -12,7 +12,10 @@ class ReportViewController: UITableViewController {
  
     lazy var dataProvider = ReportDataProvider()
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dataProvider.getTaskAttachments()
+    }
     
 }
 
@@ -39,6 +42,8 @@ extension ReportViewController {
 //MARK: UITableViewDelegate
 extension ReportViewController {
     var tableMap: TableMap {
-        return [ ]
+        return [
+            [TableRow(title: "Результаты работы", detail: nil, accessory: .disclosureIndicator)]
+        ]
     }
 }

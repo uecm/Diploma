@@ -93,6 +93,25 @@ extension APIProvider {
         }
     }
     
+    func getAttachmentsForTask(with id: Int, completion: Closure<[TaskAttachmentModel]>) {
+        request(.taskAttachments(taskId: id)) { (result) in
+            switch result {
+            case let .success(response):
+                do {
+                    let attachments = try response.map([TaskAttachmentModel].self)
+                    completion?(attachments)
+                } catch {
+                    print("Could not parse task attachments in function \(#function)")
+                    completion?([])
+                }
+            case let .failure(error):
+                debugPrint("An error occurred while trying to get attachments for a task: " +
+                    "\(error.localizedDescription)")
+                completion?([])
+            }
+        }
+    }
+    
 }
 
 
@@ -138,14 +157,11 @@ extension APIProvider {
     }
     
     func downloadBook(_ document: DocumentFile, completion: Closure<Data?>) {
-        request(.downloadFile(link: "http://" + document.link)) { (result) in
+        request(.downloadFile(path: document.path)) { (result) in
             switch result {
             case let .success(moyaResponse):
-                do {
-                    let data = try moyaResponse.map(String.self)
-                    let d = Data.init(base64Encoded: data)
-                    completion?(d)
-                } catch { fatalError() }
+                let data = moyaResponse.data
+                completion?(data)
             case let .failure(error):
                 debugPrint("An error occurred while trying " +
                     "to get book: \(error.localizedDescription)")
