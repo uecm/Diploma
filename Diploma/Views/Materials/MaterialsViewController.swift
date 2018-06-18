@@ -8,27 +8,10 @@
 
 import UIKit
 
-enum EducationalMaterial {
-    case book
-    case guidelines
-    case lab
-    
-    static let all: [EducationalMaterial] = [.book, .guidelines, .lab]
-    
-    var name: String {
-        switch self {
-        case .book:
-            return "Книги"
-        case .guidelines:
-            return "Методичные указания"
-        case .lab:
-            return "Лабораторные работы"
-        }
-    }
-}
+
 
 class MaterialsViewController: UITableViewController {
-    
+        
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return EducationalMaterial.all.count
     }
@@ -42,4 +25,15 @@ class MaterialsViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let cell = sender as? UITableViewCell,
+            let index = tableView.indexPath(for: cell)?.row else {
+                return
+        }
+        let dataProvider = (segue.destination as? DocumentListViewController)?.dataProvider
+        let materialType = EducationalMaterial.forIndex(index)
+        dataProvider?.materialType = materialType ?? .book
+    }
 }
+

@@ -115,3 +115,43 @@ extension APIProvider {
         }
     }
 }
+
+
+//MARK: - Documents
+
+extension APIProvider {
+    
+    func getBooks(_ completion: Closure<[DocumentFile]>) {
+        request(.books) { (result) in
+            switch result {
+            case let .success(moyaResponse):
+                do {
+                    let books = try moyaResponse.map([DocumentFile].self)
+                    completion?(books)
+                } catch { print("Could not parse books in function \(#function)") }
+            case let .failure(error):
+                debugPrint("An error occurred while trying " +
+                    "to get books: \(error.localizedDescription)")
+                completion?([])
+            }
+        }
+    }
+    
+    func downloadBook(_ document: DocumentFile, completion: Closure<Data?>) {
+        request(.downloadFile(link: "http://" + document.link)) { (result) in
+            switch result {
+            case let .success(moyaResponse):
+                do {
+                    let data = try moyaResponse.map(String.self)
+                    let d = Data.init(base64Encoded: data)
+                    completion?(d)
+                } catch { fatalError() }
+            case let .failure(error):
+                debugPrint("An error occurred while trying " +
+                    "to get book: \(error.localizedDescription)")
+                completion?(nil)
+            }
+        }
+    }
+    
+}

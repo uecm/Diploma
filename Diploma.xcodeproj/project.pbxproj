@@ -43,6 +43,10 @@
 		746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */; };
 		746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB54206AE30D0005B0F2 /* DataManager.swift */; };
 		746EEB57206AE73D0005B0F2 /* TeacherListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */; };
+		74A2035B20C719DD00C849A5 /* DocumentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2035A20C719DD00C849A5 /* DocumentFile.swift */; };
+		74A2035D20C7231100C849A5 /* DocumentListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2035C20C7231100C849A5 /* DocumentListDataProvider.swift */; };
+		74A2036020C72B3400C849A5 /* DocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2035F20C72B3400C849A5 /* DocumentListViewController.swift */; };
+		74A2036320C72F5600C849A5 /* EducationalMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2036220C72F5600C849A5 /* EducationalMaterial.swift */; };
 		74AABC0620B88D1700933D2E /* TableOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AABC0520B88D1700933D2E /* TableOrganizer.swift */; };
 		74B070B6209E0B5D00315498 /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070B5209E0B5D00315498 /* Authorizer.swift */; };
 		74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B070B7209E0F8D00315498 /* AppCoordinator.swift */; };
@@ -96,6 +100,10 @@
 		746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonDataProvider.swift; sourceTree = "<group>"; };
 		746EEB54206AE30D0005B0F2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		746EEB56206AE73D0005B0F2 /* TeacherListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListDataProvider.swift; sourceTree = "<group>"; };
+		74A2035A20C719DD00C849A5 /* DocumentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFile.swift; sourceTree = "<group>"; };
+		74A2035C20C7231100C849A5 /* DocumentListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListDataProvider.swift; sourceTree = "<group>"; };
+		74A2035F20C72B3400C849A5 /* DocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListViewController.swift; sourceTree = "<group>"; };
+		74A2036220C72F5600C849A5 /* EducationalMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalMaterial.swift; sourceTree = "<group>"; };
 		74AABC0520B88D1700933D2E /* TableOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOrganizer.swift; sourceTree = "<group>"; };
 		74B070B5209E0B5D00315498 /* Authorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorizer.swift; sourceTree = "<group>"; };
 		74B070B7209E0F8D00315498 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 			children = (
 				7426B65C209B741900612BAE /* Network models */,
 				7426B92E209DF38E00612BAE /* Realm */,
+				74A2036220C72F5600C849A5 /* EducationalMaterial.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 				7426B661209B746300612BAE /* TeacherModel.swift */,
 				7426B663209B746E00612BAE /* SubjectModel.swift */,
 				7426B665209B747A00612BAE /* TaskModel.swift */,
+				74A2035A20C719DD00C849A5 /* DocumentFile.swift */,
 			);
 			name = "Network models";
 			sourceTree = "<group>";
@@ -214,7 +224,7 @@
 				7424A6BD2063BE230052374F /* Report */,
 				7424A6C22068DD4C0052374F /* Task */,
 				74B070B4209E07E800315498 /* Login */,
-				DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */,
+				74A2035E20C7231600C849A5 /* Materials */,
 				74B070BA209EE3B400315498 /* SettingsViewController.swift */,
 				DFADF24F20C6C5A700FE91BD /* DEPRECATED */,
 			);
@@ -302,6 +312,24 @@
 				746EEB52206ADC2C0005B0F2 /* AddLessonDataProvider.swift */,
 			);
 			path = "Add Lesson";
+			sourceTree = "<group>";
+		};
+		74A2035E20C7231600C849A5 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */,
+				74A2036120C72B4000C849A5 /* Document list */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		74A2036120C72B4000C849A5 /* Document list */ = {
+			isa = PBXGroup;
+			children = (
+				74A2035C20C7231100C849A5 /* DocumentListDataProvider.swift */,
+				74A2035F20C72B3400C849A5 /* DocumentListViewController.swift */,
+			);
+			path = "Document list";
 			sourceTree = "<group>";
 		};
 		74B070B4209E07E800315498 /* Login */ = {
@@ -497,6 +525,7 @@
 				74358471205BC0FB00DB0AE3 /* AppDelegate.swift in Sources */,
 				DFADF24E20C6B6ED00FE91BD /* TaskListDataProvider.swift in Sources */,
 				7424A6BC2063B5A20052374F /* SubjectsDataProvider.swift in Sources */,
+				74A2035D20C7231100C849A5 /* DocumentListDataProvider.swift in Sources */,
 				DFADF25120C6C60100FE91BD /* MaterialsViewController.swift in Sources */,
 				7426B662209B746300612BAE /* TeacherModel.swift in Sources */,
 				7424A6AB2063A9AC0052374F /* Lesson.swift in Sources */,
@@ -511,6 +540,7 @@
 				7426B92D209DF34700612BAE /* Student.swift in Sources */,
 				7424A6BA2063B5920052374F /* SubjectsViewController.swift in Sources */,
 				7424A6B32063AAB00052374F /* Day.swift in Sources */,
+				74A2036320C72F5600C849A5 /* EducationalMaterial.swift in Sources */,
 				7426B664209B746E00612BAE /* SubjectModel.swift in Sources */,
 				74B070BD209EE96600315498 /* User.swift in Sources */,
 				746EEB51206AD1640005B0F2 /* TextFieldCell.swift in Sources */,
@@ -522,8 +552,10 @@
 				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
 				7426B65E209B742C00612BAE /* UserModel.swift in Sources */,
 				7426B897209CD9A600612BAE /* Requests.swift in Sources */,
+				74A2036020C72B3400C849A5 /* DocumentListViewController.swift in Sources */,
 				74B070BF209F7DF200315498 /* StudyTask.swift in Sources */,
 				7424A6C62068DD660052374F /* StudyTaskDataProvider.swift in Sources */,
+				74A2035B20C719DD00C849A5 /* DocumentFile.swift in Sources */,
 				74DDD0E5206CFD0A0064921F /* TeacherLessonListViewController.swift in Sources */,
 				7426B660209B743E00612BAE /* StudentModel.swift in Sources */,
 				74D21E262074C7E5001DB723 /* NotificationManager.swift in Sources */,

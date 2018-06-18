@@ -15,14 +15,35 @@ enum APIService {
     case addStudent(model: StudentModel)
     case myTasks
     case allTasks
+    case books
+    case downloadFile(link: String)
     
-    static let host = "192.168.30.83"
+    static let host = "192.168.0.101"
+    
+    static let DefaultDownloadDestination: DownloadDestination = { temporaryURL, response in
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileURL = documentsURL.appendingPathComponent(response.suggestedFilename!)
+        return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+    }
 }
 
 
 extension APIService: TargetType {
     
-    var baseURL: URL { return URL(string: "http://\(APIService.host):8080")! }
+    var baseURL: URL {
+        switch self {
+        case .downloadFile(let link):
+            guard let url = URL(string: link) else {
+                fatalError("Could not build a url with link: \(link)")
+            }
+            return url
+        default:
+            return URL(string: "http://\(APIService.host):8080")!
+        }
+    }
+    
+    
+//    var baseURL: URL {  }
     
     
     var path: String {
@@ -37,12 +58,16 @@ extension APIService: TargetType {
             return "/task/all"
         case .myTasks:
             return "/task"
+        case .books:
+            return "file/books"
+        default:
+            return ""
         }
     }
     
     var method: Method {
         switch self {
-        case .user, .students, .myTasks, .allTasks:
+        case .user, .students, .myTasks, .allTasks, .books, .downloadFile(_):
             return .get
         case .login, .addStudent(model: _):
             return .post
@@ -55,8 +80,10 @@ extension APIService: TargetType {
     
     var task: Task {
         switch self {
-        case .login, .user, .students, .myTasks, .allTasks:
+        case .login, .user, .students, .myTasks, .allTasks, .books:
             return .requestPlain
+        case .downloadFile(_):
+            return .downloadDestination(APIService.DefaultDownloadDestination)
         case let .addStudent(model: model):
             return .requestJSONEncodable(model)
         }
