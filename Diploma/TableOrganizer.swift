@@ -29,7 +29,7 @@ struct TableRow {
     let title: String?
     let detail: String?
     let type: TableRowType
-    let accessoryType: UITableViewCellAccessoryType?
+    let accessoryType: UITableViewCellAccessoryType
     
     init(title: String, detail: String? = nil, type: TableRowType? = nil, accessory: UITableViewCellAccessoryType = .none) {
         self.title = title

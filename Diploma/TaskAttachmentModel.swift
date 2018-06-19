@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TaskAttachmentModel: Codable {
+struct TaskAttachmentModel: Codable, Hashable {
     let id: Int
     let taskId: Int
     let data: Data

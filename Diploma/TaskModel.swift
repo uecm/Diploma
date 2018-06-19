@@ -17,11 +17,15 @@ struct TaskRequestModel: Encodable, Hashable {
     let studentId: Int
     let teacherId: Int
     let status: Int
+    let comment: String
 }
 
 
 struct TaskResponseModel: Decodable, Hashable {
-
+    var hashValue: Int {
+        return id
+    }
+    
     let id: Int
     let description: String
     let startDate: Double
@@ -30,5 +34,7 @@ struct TaskResponseModel: Decodable, Hashable {
     let student: StudentModel
     let teacher: TeacherModel
     let status: Int
+    let comment: String
+    let attachments: [TaskAttachmentModel]
     
 }

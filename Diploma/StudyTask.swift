@@ -20,6 +20,10 @@ final class StudyTask: Object {
     @objc dynamic var text: String?
     @objc dynamic var startDate: Date?
     @objc dynamic var endDate: Date?
+    @objc dynamic var comment: String?
+    
+    let attachments = List<TaskAttachment>()
+    
     
     var status: TaskStatus {
         get { return TaskStatus(rawValue: statusPrivate) ?? .new }
@@ -42,10 +46,14 @@ final class StudyTask: Object {
         self.startDate = Date(timeIntervalSince1970: TimeInterval(model.startDate))
         self.endDate = Date(timeIntervalSince1970: TimeInterval(model.endDate))
         self.statusPrivate = model.status
+        self.comment = model.comment
         
         self.subject = Subject(model.subject)
         self.student = Student(model.student)
         self.teacher = Teacher(model.teacher)
+        
+        let attachments = model.attachments.map(TaskAttachment.init)
+        self.attachments.append(objectsIn: attachments)
     }
     
     static func textForTaskStatus(_ status: StudyTask.TaskStatus) -> String {

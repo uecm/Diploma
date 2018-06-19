@@ -27,13 +27,22 @@ class TaskListViewController: UITableViewController {
         title = subject.name
     }
     
-    private func loadTasks() {
+    func loadTasks() {
         let callback: Closure<[StudyTask]> = { [weak self] (tasks) in
             guard let strong = self else { return }
             strong.tasks = tasks
             strong.tableView.reloadData()
         }
         dataProvider.getTasks(callback: callback, update: callback)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "makeReport", sender as? UITableViewCell != nil {
+            let controller = segue.destination as? ReportViewController
+            let index = tableView.indexPath(for: sender as! UITableViewCell)?.row ?? 0
+            let task = tasks[index]
+            controller?.dataProvider.task = task
+        }
     }
 }
 

@@ -112,6 +112,40 @@ extension APIProvider {
         }
     }
     
+    
+    func updateCommentForTask(with id: Int, comment: String, completion: Closure<Bool> = nil) {
+        request(.updateTaskComment(taskId: id, comment: comment)) { (result) in
+            switch result {
+            case .success(_):
+                completion?(true)
+            case let .failure(error):
+                debugPrint("An error occurred while trying to update a comment for a task: " +
+                    "\(error.localizedDescription)")
+                completion?(false)
+            }
+        }
+    }
+    
+    
+    func uploadAttachment(_ attachment: Data, forTaskWithId id: Int, completion: Closure<Int?> = nil) {
+        request(.addAttachment(taskId: id, data: attachment)) { (result) in
+            switch result {
+            case .success(let response):
+                do {
+                    let json = try JSONSerialization.jsonObject(with: response.data) as? NSDictionary
+                    let id = json?["id"] as? Int
+                    completion?(id)
+                } catch {
+                    print("Can not parse attachment upload response")
+                }
+            case let .failure(error):
+                debugPrint("An error occurred while trying to upload attachment: " +
+                    "\(error.localizedDescription)")
+                completion?(nil)
+            }
+        }
+    }
+    
 }
 
 

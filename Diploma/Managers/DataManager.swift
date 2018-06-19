@@ -56,11 +56,40 @@ class DataManager {
         }
         return myTasks
     }
+
+    func task(with id: Int) -> StudyTask? {
+        return realm.object(ofType: StudyTask.self, forPrimaryKey: id)
+    }
     
     func getStundent(for id: Int) -> Student? {
         return realm.object(ofType: Student.self, forPrimaryKey: id)
     }
     
+    @discardableResult
+    func addAttachments(_ attachments: [TaskAttachment], to task: StudyTask) -> StudyTask {
+        try! realm.write {
+            for attachment in attachments {
+                if !task.attachments.contains(attachment) {
+                    task.attachments.append(attachment)
+                }
+            }
+        }
+        return task
+    }
+    
+    @discardableResult
+    func updateComment(_ comment: String, in task: StudyTask) -> StudyTask {
+        try! realm.write {
+            task.comment = comment
+        }
+        return task
+    }
+    
+    func updateTaskStatus(_ task: StudyTask, status: StudyTask.TaskStatus) {
+        try! realm.write {
+            task.status = status
+        }
+    }
     
     //MARK: - Repository
     
@@ -105,14 +134,19 @@ class DataManager {
     
     // MARK: - Write
     
-    func update<T>(objects: [T]) where T: Object {
-        objects.forEach { write(object: $0) }
+    @discardableResult
+    func update<T: Object>(objects: [T]) -> [T] {
+        let updated = objects.map { write(object: $0) }
+        return updated
     }
     
-    func write<T: Object>(object: T) {
+    @discardableResult
+    func write<T: Object>(object: T) -> T {
+        var obj: T?
         try! realm.write({
-            realm.create(T.self, value: object, update: true)
+            obj = realm.create(T.self, value: object, update: true)
         })
+        return obj!
     }
 }
 

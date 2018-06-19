@@ -59,6 +59,9 @@
 		DF22DC7720D7DAAE00D353EA /* PDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF22DC7620D7DAAE00D353EA /* PDFViewController.xib */; };
 		DF22DC7920D7DB4900D353EA /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22DC7820D7DB4900D353EA /* PDFViewController.swift */; };
 		DF22DC7B20D7F5C100D353EA /* TaskAttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22DC7A20D7F5C100D353EA /* TaskAttachmentModel.swift */; };
+		DF38818620D91B31002ACAE7 /* TaskAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38818520D91B31002ACAE7 /* TaskAttachment.swift */; };
+		DF38818920D93B22002ACAE7 /* TaskAttachmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38818820D93B22002ACAE7 /* TaskAttachmentListViewController.swift */; };
+		DF38818B20D93B2D002ACAE7 /* TaskAttachmentListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38818A20D93B2D002ACAE7 /* TaskAttachmentListDataProvider.swift */; };
 		DFADF24B20C6B6CF00FE91BD /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */; };
 		DFADF24E20C6B6ED00FE91BD /* TaskListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */; };
 		DFADF25120C6C60100FE91BD /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */; };
@@ -120,6 +123,9 @@
 		DF22DC7620D7DAAE00D353EA /* PDFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFViewController.xib; sourceTree = "<group>"; };
 		DF22DC7820D7DB4900D353EA /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		DF22DC7A20D7F5C100D353EA /* TaskAttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAttachmentModel.swift; sourceTree = "<group>"; };
+		DF38818520D91B31002ACAE7 /* TaskAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAttachment.swift; sourceTree = "<group>"; };
+		DF38818820D93B22002ACAE7 /* TaskAttachmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAttachmentListViewController.swift; sourceTree = "<group>"; };
+		DF38818A20D93B2D002ACAE7 /* TaskAttachmentListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAttachmentListDataProvider.swift; sourceTree = "<group>"; };
 		DFADF24A20C6B6CF00FE91BD /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		DFADF24D20C6B6ED00FE91BD /* TaskListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataProvider.swift; sourceTree = "<group>"; };
 		DFADF25020C6C60100FE91BD /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 			children = (
 				74B070BC209EE96600315498 /* User.swift */,
 				74B070BE209F7DF200315498 /* StudyTask.swift */,
+				DF38818520D91B31002ACAE7 /* TaskAttachment.swift */,
 				7424A6AA2063A9AC0052374F /* Lesson.swift */,
 				7426B92C209DF34700612BAE /* Student.swift */,
 				7424A6AC2063A9B30052374F /* Subject.swift */,
@@ -225,6 +232,7 @@
 		7426B935209DFC7400612BAE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF38818720D93B0B002ACAE7 /* Task Attachment List */,
 				DF22DC7520D7DA9100D353EA /* PDF View */,
 				74358484205BC72800DB0AE3 /* Today */,
 				7424A6B82063B5730052374F /* Subjects */,
@@ -377,6 +385,15 @@
 			path = "PDF View";
 			sourceTree = "<group>";
 		};
+		DF38818720D93B0B002ACAE7 /* Task Attachment List */ = {
+			isa = PBXGroup;
+			children = (
+				DF38818820D93B22002ACAE7 /* TaskAttachmentListViewController.swift */,
+				DF38818A20D93B2D002ACAE7 /* TaskAttachmentListDataProvider.swift */,
+			);
+			path = "Task Attachment List";
+			sourceTree = "<group>";
+		};
 		DFADF24C20C6B6D300FE91BD /* Task List */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,7 +501,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Diploma/Pods-Diploma-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -494,7 +515,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -530,7 +555,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF38818920D93B22002ACAE7 /* TaskAttachmentListViewController.swift in Sources */,
 				DF22DC7B20D7F5C100D353EA /* TaskAttachmentModel.swift in Sources */,
+				DF38818620D91B31002ACAE7 /* TaskAttachment.swift in Sources */,
 				746EEB53206ADC2C0005B0F2 /* AddLessonDataProvider.swift in Sources */,
 				74B070B8209E0F8D00315498 /* AppCoordinator.swift in Sources */,
 				7426B937209DFC8500612BAE /* LoginViewController.swift in Sources */,
@@ -572,6 +599,7 @@
 				746EEB55206AE30D0005B0F2 /* DataManager.swift in Sources */,
 				7426B65E209B742C00612BAE /* UserModel.swift in Sources */,
 				7426B897209CD9A600612BAE /* Requests.swift in Sources */,
+				DF38818B20D93B2D002ACAE7 /* TaskAttachmentListDataProvider.swift in Sources */,
 				74A2036020C72B3400C849A5 /* DocumentListViewController.swift in Sources */,
 				74B070BF209F7DF200315498 /* StudyTask.swift in Sources */,
 				7424A6C62068DD660052374F /* StudyTaskDataProvider.swift in Sources */,

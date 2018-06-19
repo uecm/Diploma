@@ -13,6 +13,6 @@ target 'Diploma' do
     pod 'ActionSheetPicker-3.0'
     pod 'Alamofire'
     pod 'Moya'
-    
+    pod 'Lightbox'
     
 end

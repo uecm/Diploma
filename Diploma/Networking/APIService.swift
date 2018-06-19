@@ -18,6 +18,8 @@ enum APIService {
     case books
     case downloadFile(path: String)
     case taskAttachments(taskId: Int)
+    case updateTaskComment(taskId: Int, comment: String)
+    case addAttachment(taskId: Int, data: Data)
     
     static let host = "192.168.30.83"
     
@@ -57,6 +59,10 @@ extension APIService: TargetType {
             return "file/download"
         case let .taskAttachments(taskId: taskId):
             return "task/attachments/\(taskId)"
+        case let .updateTaskComment(taskId: taskId, _):
+            return "task/comment/\(taskId)"
+        case .addAttachment(_, _):
+            return "task/attachment"
         }
     }
     
@@ -64,8 +70,10 @@ extension APIService: TargetType {
         switch self {
         case .user, .students, .myTasks, .allTasks, .books, .taskAttachments(taskId: _):
             return .get
-        case .login, .addStudent(model: _), .downloadFile(_):
+        case .login, .addStudent(model: _), .downloadFile(_), .addAttachment(_, _):
             return .post
+        case .updateTaskComment(taskId: _):
+            return .patch
         }
     }
     
@@ -79,17 +87,25 @@ extension APIService: TargetType {
             return .requestPlain
         
         case .downloadFile(let path):
-            return .requestParameters(parameters: ["path" : path], encoding: JSONEncoding.default)
+            return .requestParameters(parameters: ["path": path], encoding: JSONEncoding.default)
             
         case let .addStudent(model: model):
             return .requestJSONEncodable(model)
 
+        case .updateTaskComment(_, let comment):
+            return .requestParameters(parameters: ["comment": comment], encoding: JSONEncoding.default)
+            
+        case .addAttachment(taskId: let taskId, data: let data):
+            return .uploadCompositeMultipart([MultipartFormData(provider: .data(data), name: "data")],
+                                             urlParameters: ["taskId": taskId])
         }
     }
     
     var headers: [String : String]? {
         var header = ["Content-type": "application/json"]
         switch self {
+        case .addAttachment(taskId: _, data: _):
+            return ["Content-type": "multipart/form-data"]
         case let .login(email: e, password: p):
             header["Authorization"] = "Basic \("\(e):\(p)".base64Encoded)"
             fallthrough
